@@ -800,6 +800,10 @@ img {
 }
 
 /*========== SCROLL BAR ==========*/
+
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
 @media screen and (max-width: 350px) {
   .container{
     margin-left: var(--mb-1);
@@ -823,14 +827,16 @@ img {
   .qualification__data{
     gap: .5rem;
   }
-
+  
 }
-
-/*==================== MEDIA QUERIES ====================*/
-/* For small devices */
-
-
 /* For medium devices */
-
+@media screen and (min-width: 568px) {
+  .home__content{
+    grid-template-columns: max-content 1fr 1fr;
+  }
+  .home__data{
+    grid-column: initial;
+  }
+}
 
 /* For large devices */
