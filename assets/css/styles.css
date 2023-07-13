@@ -845,7 +845,8 @@ img {
   .about__container,
   .skills__container,
   .portfolio__content,
-  .footer__container{
+  .footer__container,
+  .contact__container{
     grid-template-columns: repeat(2, 1fr);
   }
   .qualification__sections{
@@ -970,5 +971,26 @@ img {
   }
   .home__blob{
     width: 320px;
+  }
+  .home__social{
+    transform: translateX(-6rem);
+  }
+  .portfolio__container{
+    column-gap: 5rem;
+  }
+  .swiper-button-prev{
+    left: -3.5rem;
+  }
+  .swiper-button-next{
+    right: -3.5rem;
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullet{
+    bottom: -4.5rem;
+  }
+  .contact__form{
+    width: 460px;
+  }
+  .contact__inputs{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
